@@ -1,204 +1,295 @@
-# TMS Foundation - Volunteer Dashboard
+<div align="center">
 
-A modern, responsive volunteer dashboard built with React for tracking volunteer activities, projects, and tasks.
+# TMS FOUNDATION - VOLUNTEER DASHBOARD 🤝
 
-**🔗 Live Demo:** https://tms-foundation-j070u4qyg-harshkushwaha7xs-projects.vercel.app/
+**Volunteer Dashboard** is a modern volunteer management platform built with **React.js**, **Context API**, and **CSS3**. It enables **efficient volunteer tracking**, **project management**, and **real-time notifications** — designed for non-profit organizations and community engagement.
+
+• [Live Demo](https://tms-foundation-j070u4qyg-harshkushwaha7xs-projects.vercel.app/) • [Portfolio](https://portfolio-harsh7x.vercel.app/) • [GitHub](https://github.com/harshkushwaha7x)
+
+</div>
 
 ---
 
-## ✨ Features
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.0-61dafb?style=flat-square&logo=react" alt="react">
+  <img src="https://img.shields.io/badge/Vite-5.4.21-646cff?style=flat-square&logo=vite" alt="vite">
+  <img src="https://img.shields.io/badge/Context_API-State_Management-61dafb?style=flat-square" alt="context">
+  <img src="https://img.shields.io/badge/version-1.0.0-success?style=flat-square" alt="version" />
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="license" />
+</p>
+
+---
+
+## � Overview
+
+**TMS Foundation Volunteer Dashboard** is a comprehensive volunteer management platform enabling organizations to track contributions, manage projects, and engage volunteers efficiently with real-time updates and modern UI.
+
+Built using **React.js**, **Context API**, and **CSS3**, it delivers a fast, responsive, and scalable volunteer management experience.
+
+Core highlights:
+
+* 📊 **Personal Stats**: Track contribution hours, projects, and tasks
+* 📁 **Project Management**: Visual progress tracking with deadlines
+* ✅ **Task Organization**: Priority-based task management system
+* 🔔 **Real-Time Notifications**: Instant updates for assignments and deadlines
+* 🌓 **Dark Theme**: Professional dark mode design
+* 📱 **Fully Responsive**: Optimized for all devices
+
+---
+
+## � Key Features
 
 ### 📊 Dashboard Overview
-- **Personal Stats**: Track contribution hours, completed projects, and tasks
-- **Trend Indicators**: Visual badges showing progress and growth
-- **Activity Timeline**: Days active as a volunteer
+
+* Personal contribution statistics with trend indicators
+* Visual badges showing progress and growth
+* Days active tracking for volunteers
+* Color-coded metrics (Teal primary, Amber secondary)
 
 ### 📁 Project Management
-- **Active Projects**: View all ongoing projects with progress tracking
-- **Progress Bars**: Visual representation of project completion
-- **Status Badges**: Real-time project status (In Progress, Upcoming, Completed)
-- **Team Size**: See how many volunteers are on each project
+
+* Active project cards with progress bars
+* Real-time status badges (In Progress, Upcoming, Completed)
+* Deadline tracking and team size display
+* Animated progress indicators
+* "View All" functionality with toast notifications
 
 ### ✅ Task Tracking
-- **Priority Levels**: Tasks organized by High, Medium, and Low priority
-- **Due Dates**: Built-in deadline tracking
-- **Status Management**: Mark tasks as completed, in-progress, or pending
-- **Project Association**: Link tasks to specific projects
 
-### 🔔 Notifications
-- **Real-time Updates**: Stay informed about task completions and new assignments
-- **Read/Unread States**: Visual indicators with pulsing animations
-- **Type-based Icons**: Different icons for success, info, and warning notifications
-- **Toast Messages**: Interactive feedback for user actions
+* Priority-based task organization (High, Medium, Low)
+* Interactive checkboxes with status icons
+* Due date management and project associations
+* Completed, In-Progress, and Pending states
+* Task filtering capabilities
 
-### 🎨 Design & UX
-- **Modern UI**: Clean, professional interface with teal and amber color scheme
-- **Responsive Design**: Fully optimized for desktop, tablet, and mobile
-- **Smooth Animations**: Hover effects, progress bar animations, and transitions
-- **Dark Theme**: Eye-friendly dark color palette
+### 🔔 Notifications System
 
----
+* Type-based icons (Success, Warning, Info)
+* Read/unread indicators with pulsing animations
+* Timestamp tracking for all notifications
+* "Mark all read" functionality
+* Toast notifications for user feedback
 
-## 🛠️ Technology Stack
+### 🎨 User Interface
 
-- **React 18** - Modern UI library with hooks
-- **Vite** - Lightning-fast build tool and dev server
-- **Context API** - State management for global data
-- **CSS3** - Custom styling with CSS variables
-- **SVG Icons** - Scalable vector graphics
-- **Google Fonts (Inter)** - Professional typography
+* Modern teal and amber color palette
+* Glassmorphism effects and smooth animations
+* Google Fonts (Inter) professional typography
+* Dark theme optimized for eye comfort
+* Hover effects and micro-interactions
 
 ---
 
-## 🚀 Quick Start
+## ⚙️ Tech Stack
+
+### Frontend
+
+* React 18.0 with Hooks
+* Context API for State Management
+* Vite 5.4.21 (Build Tool)
+* CSS3 with CSS Variables
+* SVG Icons (Inline)
+* Google Fonts (Inter)
+
+### State Management
+
+* Context API Provider/Consumer pattern
+* Centralized volunteer data store
+* Mock data structure ready for API integration
+* Global state for user, projects, tasks, notifications
+
+### Design System
+
+* CSS Variables for theming
+* Teal Primary (#0891b2)
+* Amber Secondary (#f59e0b)
+* Consistent spacing and typography
+* Mobile-first responsive design
+
+---
+
+## 🧩 Architecture
+
+```text
+tms-foundation/
+├── src/
+│   ├── components/             # React Components
+│   │   ├── Navbar.jsx/css      # Navigation with user profile
+│   │   ├── StatsCards.jsx/css  # Volunteer statistics
+│   │   ├── Projects.jsx/css    # Project tracking cards
+│   │   ├── Tasks.jsx/css       # Task management list
+│   │   └── Notifications.jsx/css # Notification feed
+│   ├── context/                # State Management
+│   │   └── VolunteerContext.jsx # Context API provider
+│   ├── App.jsx                 # Main Component
+│   ├── App.css                 # App Styles
+│   ├── index.css               # Global Design System
+│   └── main.jsx                # React Entry Point
+│
+├── dashboard-standalone.html   # Standalone Demo
+├── index.html                  # HTML Template
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 🧰 Getting Started
 
 ### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+
+* Node.js v16+
+* npm or yarn
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/harshkushwaha7x/tms-foundation.git
-   cd tms-foundation
-   ```
+```bash
+git clone https://github.com/harshkushwaha7x/tms-foundation.git
+cd tms-foundation
+```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+#### Install Dependencies
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+```
 
-4. **Open in browser**
-   ```
-   http://localhost:5173
-   ```
+#### Run Development Server
 
-### Build for Production
+```bash
+npm run dev
+
+# App runs at: http://localhost:5173
+```
+
+#### Build for Production
 
 ```bash
 npm run build
-```
-
-The optimized production build will be created in the `dist` folder.
-
-### Preview Production Build
-
-```bash
 npm run preview
 ```
 
----
+### Quick Demo (No Build Required)
 
-## 📂 Project Structure
-
-```
-tms-foundation/
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx/css        # Navigation with user profile
-│   │   ├── StatsCards.jsx/css    # Volunteer statistics
-│   │   ├── Projects.jsx/css      # Project tracking cards
-│   │   ├── Tasks.jsx/css         # Task management list
-│   │   └── Notifications.jsx/css # Notification feed
-│   ├── context/
-│   │   └── VolunteerContext.jsx  # Context API state management
-│   ├── App.jsx                   # Main application component
-│   ├── App.css                   # App-level styles
-│   ├── index.css                 # Global styles & design system
-│   └── main.jsx                  # React entry point
-├── dashboard-standalone.html     # Standalone demo (no build needed)
-├── index.html                    # HTML template
-├── package.json                  # Dependencies & scripts
-└── vite.config.js               # Vite configuration
-```
+Simply open `dashboard-standalone.html` in your browser for an instant demo without any installation!
 
 ---
 
-## 🎯 Key Architectural Decisions
+## 💡 Usage Guide
 
-### Component Organization
-Each component has its own CSS file for better modularity and maintainability.
+### Dashboard Navigation
 
-### State Management
-Context API is used for centralized state management, providing global access to:
-- User profile data
-- Projects list
-- Tasks list
-- Notifications
+* View personal stats on the main dashboard
+* Monitor contribution hours and completed projects
+* Track active days as a volunteer
+* Access all sections from the navigation bar
 
-### Design System
-CSS variables ensure consistent theming throughout the application:
-- Primary: Teal (#0891b2)
-- Secondary: Amber (#f59e0b)
-- Success: Green (#10b981)
-- Info: Blue (#3b82f6)
+### Project Management
 
-### Responsive Design
-Built with a mobile-first approach using Flexbox and CSS Grid for adaptive layouts.
+* View all active projects with progress bars
+* Click "View All" to see complete project list
+* Monitor project deadlines and team sizes
+* Track project status with visual badges
+
+### Task Management
+
+* View assigned tasks with priority levels
+* Mark tasks as completed using checkboxes
+* Filter tasks by status (Completed, In-Progress, Pending)
+* Track due dates and project associations
+
+### Notifications
+
+* Receive real-time updates for new assignments
+* Get deadline reminders and meeting notifications
+* Mark notifications as read/unread
+* Click "Mark all read" to clear notification badge
+
+### Interactive Features
+
+* Hover over cards for visual feedback
+* Click action buttons for toast notifications
+* Smooth animations throughout the interface
+* Responsive design adapts to your screen size
 
 ---
 
-## 🔄 Future Enhancements
+## 🎨 Design Features
 
-- [ ] Django REST API integration
-- [ ] User authentication system
-- [ ] Database persistence
-- [ ] Real-time WebSocket updates
-- [ ] Advanced filtering and search
-- [ ] Data visualization with charts
-- [ ] Export reports functionality
-- [ ] Email notifications
+* **Color Palette**: Professional teal (#0891b2) and amber (#f59e0b)
+* **Typography**: Inter font family for modern readability
+* **Animations**: Smooth transitions and hover effects
+* **Icons**: Custom SVG icons for all actions
+* **Layout**: CSS Grid and Flexbox for responsive design
 
 ---
 
-## 📸 Screenshots
+## 📱 Responsive Design
 
-### Dashboard Overview
-![Dashboard](https://via.placeholder.com/800x450?text=Dashboard+Screenshot)
+* Mobile (375px+) — Stacked layout, touch-optimized
+* Tablet (768px+) — Balanced grid layout
+* Desktop (1440px+) — Full dashboard with sidebar
 
-### Mobile View
-![Mobile](https://via.placeholder.com/375x667?text=Mobile+View)
+---
+
+## ⚡ Performance
+
+* Vite for lightning-fast development
+* Component-based architecture for reusability
+* CSS variables for instant theme updates
+* Optimized bundle size for production
+* Lazy loading ready for API integration
+
+---
+
+## � Future Enhancements
+
+* [ ] Django REST API integration
+* [ ] User authentication system
+* [ ] Database persistence (PostgreSQL)
+* [ ] Real-time WebSocket updates
+* [ ] Advanced filtering and search
+* [ ] Data visualization with charts
+* [ ] Email notification system
+* [ ] Export reports functionality
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m "Add new feature"`)
+4. Push & open a Pull Request
 
 ---
 
-## 📄 License
+## 🪪 License
 
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 👤 Author
-
-**Harsh Kushwaha**
-- Email: harshkushwaha4151@gmail.com
-- GitHub: [@harshkushwaha7x](https://github.com/harshkushwaha7x)
+This project is licensed under the **MIT License**.
 
 ---
 
-## 🙏 Acknowledgments
+## � Contact
 
-- Built for TMS Foundation
-- Inspired by modern volunteer management platforms
-- UI design influenced by contemporary dashboard trends
+**Harsh Kushwaha** — Developer & Maintainer
+
+* Portfolio: [https://portfolio-harsh7x.vercel.app/](https://portfolio-harsh7x.vercel.app/)
+* GitHub: [https://github.com/harshkushwaha7x](https://github.com/harshkushwaha7x)
+* LinkedIn: [https://www.linkedin.com/in/harsh-kushwaha-7x/](https://www.linkedin.com/in/harsh-kushwaha-7x/)
+* Email: [harshkushwaha4151@gmail.com](mailto:harshkushwaha4151@gmail.com)
 
 ---
+
+<div align="center">
+
+**TMS FOUNDATION** – Empowering Volunteers. Building Communities.
+
+Built by **Harsh Kushwaha**
 
 **⭐ If you find this project useful, please consider giving it a star on GitHub!**
+
+</div>
+
+---
