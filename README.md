@@ -288,8 +288,6 @@ This project is licensed under the **MIT License**.
 
 Built by **Harsh Kushwaha**
 
-**⭐ If you find this project useful, please consider giving it a star on GitHub!**
-
 </div>
 
 ---
