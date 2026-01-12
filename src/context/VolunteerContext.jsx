@@ -14,7 +14,7 @@ export const VolunteerProvider = ({ children }) => {
     const [user] = useState({
         name: 'Harsh Kushwaha',
         email: 'harshkushwaha4151@gmail.com',
-        role: 'Web Development Intern',
+        role: 'Web Development',
         joinedDate: '2026-01-10',
         avatar: 'HK',
         contributionHours: 42,
@@ -59,7 +59,7 @@ export const VolunteerProvider = ({ children }) => {
             project: 'Volunteer Portal',
             status: 'completed',
             priority: 'high',
-            dueDate: '2026-01-12',
+            dueDate: '2026-01-20',
         },
         {
             id: 2,
@@ -67,7 +67,7 @@ export const VolunteerProvider = ({ children }) => {
             project: 'Website Redesign',
             status: 'in-progress',
             priority: 'high',
-            dueDate: '2026-01-13',
+            dueDate: '2026-01-12',
         },
         {
             id: 3,
